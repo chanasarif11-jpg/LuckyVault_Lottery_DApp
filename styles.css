@@ -1,0 +1,405 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fffdf8;
+    color: #29251d;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: white;
+    border-bottom: 1px solid #eee4cf;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+    color: #29251d;
+    text-decoration: none;
+}
+
+.logo span,
+footer span {
+    color: #c99b35;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: #514a3e;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #c99b35;
+}
+
+.gold-btn {
+    background: #c99b35;
+    color: white;
+    border: none;
+    padding: 13px 24px;
+    border-radius: 7px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.gold-btn:hover {
+    background: #a77a20;
+    transform: translateY(-2px);
+}
+
+.hero {
+    min-height: 480px;
+    padding: 90px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.tagline {
+    color: #bd8d2b;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #c99b35;
+}
+
+.hero-text {
+    max-width: 520px;
+    color: #716b60;
+    line-height: 1.8;
+    margin-bottom: 28px;
+}
+
+.link-btn {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.hero-card {
+    width: 290px;
+    min-height: 300px;
+    background: linear-gradient(145deg, #fff, #f7edda);
+    border: 1px solid #e5cc91;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px #b28a3020;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.vault-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #c99b35;
+    color: white;
+    display: grid;
+    place-items: center;
+    font-size: 45px;
+}
+
+.hero-card h2 {
+    color: #a77a20;
+    font-size: 27px;
+}
+
+.hero-card p {
+    color: #716b60;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px 8%;
+}
+
+.stat-card {
+    background: white;
+    border: 1px solid #eee2c9;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 20px #00000008;
+}
+
+.stat-card p {
+    color: #81796b;
+    margin-bottom: 12px;
+}
+
+.stat-card h2 {
+    color: #b88928;
+}
+
+.lottery-section,
+.winner-section,
+.owner-section,
+.how-section,
+.assistant-section {
+    padding: 75px 10%;
+    text-align: center;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-heading h2,
+.winner-section h2,
+.owner-section h2,
+.how-section h2,
+.assistant-section h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.section-heading p:last-child,
+.owner-section p {
+    color: #716b60;
+}
+
+.lottery-card {
+    background: white;
+    max-width: 430px;
+    margin: auto;
+    padding: 35px;
+    border: 1px solid #e8d7b2;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px #0000000a;
+}
+
+.lottery-card label {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.lottery-card input,
+.chat-input input {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #e0d5bd;
+    border-radius: 7px;
+    outline: none;
+}
+
+.lottery-card input:focus,
+.chat-input input:focus {
+    border-color: #c99b35;
+}
+
+.total-label {
+    color: #716b60;
+    margin-top: 25px;
+}
+
+.lottery-card h2 {
+    color: #b88928;
+    margin: 10px 0 20px;
+}
+
+.full-btn {
+    width: 100%;
+}
+
+.status {
+    color: #716b60;
+    font-size: 13px;
+    margin-top: 18px;
+    overflow-wrap: anywhere;
+}
+
+.winner-card {
+    max-width: 430px;
+    margin: 25px auto 0;
+    padding: 30px;
+    background: white;
+    border: 1px solid #e8d7b2;
+    border-radius: 15px;
+}
+
+.winner-card p {
+    color: #81796b;
+    margin: 12px 0 7px;
+}
+
+.winner-card h3 {
+    color: #a77a20;
+    overflow-wrap: anywhere;
+}
+
+.owner-section {
+    background: #fbf5e8;
+}
+
+.hidden {
+    display: none;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 35px;
+}
+
+.step-card {
+    background: white;
+    padding: 30px 20px;
+    border: 1px solid #eee2c9;
+    border-radius: 12px;
+}
+
+.step-card h3 {
+    color: #b88928;
+    margin-bottom: 15px;
+}
+
+.step-card p {
+    color: #716b60;
+    line-height: 1.6;
+}
+
+.assistant-section {
+    background: #fbf5e8;
+}
+
+.chat-box {
+    max-width: 550px;
+    margin: 25px auto 0;
+    background: white;
+    border: 1px solid #e8d7b2;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: left;
+}
+
+.chat-messages {
+    min-height: 120px;
+    max-height: 220px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+}
+
+.bot-message,
+.user-message {
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.bot-message {
+    background: #f8f0df;
+}
+
+.user-message {
+    background: #eee6d5;
+    text-align: right;
+}
+
+.chat-input {
+    display: flex;
+    gap: 10px;
+}
+
+.chat-input input {
+    flex: 1;
+    min-width: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 35px 15px;
+    background: #29251d;
+    color: white;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #d5cbb8;
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 7%;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+
+    .chat-input {
+        flex-direction: column;
+    }
+}
